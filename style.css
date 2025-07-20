@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #F9F7F7;
+    background-image: url("bg.jpg");
+    background-size: cover;           /* Makes image cover entire area */
+    background-repeat: no-repeat;     /* Prevents image from repeating */
+    background-position: center;      /* Centers the image */
+    height: 100vh;                    /*Ensures body takes Full viewport height */
+    
+}
+
+header{
+    padding: 20px;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+h1{
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: #3F72AF; /* Green color for the title */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    font-weight: bold; /* Makes the title bold */
+    letter-spacing: 1px; /* Adds spacing between letters for clarity */
+    
+}
+
+header > p{
+    font-size: 1.2em;
+    color: #112D4E;
+    margin-top: 10px; /* Adds space above the description */
+    font-style: italic; /* Italicizes the description for emphasis */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    font-weight: 400; /* Lighter weight for the description */
+    letter-spacing: 1px; /* Adds spacing between letters for clarity */
+    margin-bottom: 20px; /* Adds space below the description */
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+input{
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border: 2px solid #3F72AF; 
+    font-size: 1em;
+    width: 60%; /* Makes input wider */
+    transition: all 0.3s ease; /* Smooth transition for focus effects */
+}
+
+input:focus{
+    outline: none; /* Removes default focus outline */
+    border-color: #3F72AF;
+    box-shadow: 0 0 10px rgba(63, 114, 175, 0.4);/* Adds a glow effect on focus */
+    transform: translate(-2px, -2px); /* Slightly raise input on focus */
+
+}
+
+button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #3F72AF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    
+
+}
+
+button:hover{
+    background-color: #1E5F9C; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slightly raise button on hover on y-axis */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+
+}
+
+#results {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 20px;
+    background-color: #DBE2EF;
+    color: #222831;
+    border-radius: 10px;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+
+}
+.Searchbox {
+    display: flex;
+    justify-content: center; /* Align input and button closer */
+    gap: 10px; /* Add consistent spacing */
+    align-items: center;
+    width: 60%;
+    flex-wrap: wrap; /* Optional: helps on small screens */
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+   
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1em;
+   background-color: rgba(255, 255, 255, 0.5);
+    color: #112D4E;
+}
+
+@media (max-width: 600px) {
+  .Searchbox, input, #results {
+    width: 90%; /* Makes input and results take full width on small screens */
+    flex-direction: column;
+  }
+
+  .Searchbox {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
