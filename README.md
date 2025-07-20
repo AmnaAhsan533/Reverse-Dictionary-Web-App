@@ -29,7 +29,7 @@ The main purpose of this project was to **practically implement my learning of A
 
 # 🔗 Live Demo
 
-View Live ()
+View Live (https://amnaahsan533.github.io/Reverse-Dictionary-Web-App/)
 
 # 📚 Learnings
 
@@ -40,5 +40,5 @@ View Live ()
 
 # 🙋‍♀️ Author
 
-Made with ❤️ by Amna Ahsan 
+Made with ❤️ by Amna Ahsan. 
 Feel free to connect and explore more of my work.
